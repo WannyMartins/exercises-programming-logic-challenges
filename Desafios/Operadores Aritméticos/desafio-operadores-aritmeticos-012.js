@@ -16,6 +16,11 @@ Obs: O valor do prato tem que ter duas casas decimais após a virgula.
 */
 
 function weightAndValue(price, gram) {
+
+  const cust = ((price * gram)/1000).toFixed(2);
+  const newCust = cust.replace(/[.]/g, ',')
+
+  return `O prato de ${gram} gramas custa: R$ ${newCust}`
   // Desenvolva seu código nessa função
 }
 

@@ -9,6 +9,11 @@ Obs: Retornar um valor do tipo number com duas casa decimais.
 */
 
 function restaurantExpenses(account){
+  const dez = account * (10 / 100);
+  const cinco = (dez + account) * (5 / 100);
+  const total = account + dez + cinco;
+  // parseFloat(total).toFixed(2);
+  return total;
   // Desenvolva seu código nessa função
 }
 

@@ -20,6 +20,10 @@ Saída:
 */
 
 function dogName(snack, sweet) {
+  const snackSplit = snack.split('');
+  const sweetSplit = sweet.split('').reverse();
+  const Upercase = snackSplit[0];
+  return `O cachorrinho de Joana vai se chamar: ${Upercase}${snackSplit[1]}${snackSplit[2]}${sweetSplit[2]}${sweetSplit[1]}${sweetSplit[0]}`
   // Desenvolva seu código nessa função
 }
 

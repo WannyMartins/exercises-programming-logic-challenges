@@ -17,8 +17,12 @@ A saída deve ter o seguinte formato:
 */
 
 function findOldestSon(pedroAge, kidsAge){
+const reduceAge = kidsAge.reduce((total, age) => {total += age; return total});
+const age4 = pedroAge - reduceAge;
+kidsAge.push(age4)
+kidsAge.sort((a, b) => b - a)
   // Desenvolva seu código aqui.
-  return // Retorne o resultado aqui
+  return `O filho mais velho tem ${kidsAge[0]} anos.`
 }
 
 module.exports = findOldestSon;

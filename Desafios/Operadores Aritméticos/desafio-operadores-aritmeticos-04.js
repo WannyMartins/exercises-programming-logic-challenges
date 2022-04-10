@@ -7,6 +7,8 @@ Escreva um algoritmo que recebe uma base e um expoente numéricos e retorne o re
 */
 
 function powerNumber(base, exponent){
+  const result = base ** exponent;
+  return result;
   // Desenvolva seu código nessa função
 }
 

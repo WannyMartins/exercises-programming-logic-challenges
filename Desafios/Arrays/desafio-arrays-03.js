@@ -17,8 +17,13 @@ Caso o contrário:
 */
 
 function findGuest(names, guest){
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
-}
+
+  const findName = names.map((name) => name.includes(guest));
+  if(findName.includes(true)) {
+    return "O nome está na lista."
+  } else {
+  
+  return "O nome não está na lista.";// Retorne o resultado aqui
+}}
 
 module.exports = findGuest;

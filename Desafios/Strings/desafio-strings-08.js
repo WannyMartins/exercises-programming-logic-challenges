@@ -12,7 +12,22 @@ a = á, ã, à.
 */
 
 function countLetters(string, letter) {
+  let count = 0;
+  let newString = string;
+  newString = newString.replace(/[àáäâã]/g, "a");
+  newString = newString.replace(/[èéëê]/g, "e");
+  newString = newString.replace(/[ìíïî]/g, "i");
+  newString = newString.replace(/[òóöô]/g, "o");
+  newString = newString.replace(/[ùúüû]/g, "u");
+  newString = newString.toLowerCase();
+  const stringMod = newString.split("")
+  stringMod.filter((letra) => {
+   if(letra === letter) {count += 1} 
+  });
+ return count;
   // Desenvolva seu código nessa função
 }
+
+console.log(countLetters('somente uma', 'e'))
 
 module.exports = countLetters;

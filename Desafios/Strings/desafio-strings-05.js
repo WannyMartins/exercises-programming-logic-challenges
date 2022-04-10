@@ -17,6 +17,7 @@ Saída:
 
 function firstLastLetter(word) {
   // Desenvolva seu código nessa função
+  let letra = word.split("").reverse();
+  return `A primeira letra é: ${word[0]} e a última letra é: ${letra[0]}.`
 }
-
 module.exports = firstLastLetter;

@@ -7,8 +7,11 @@ Escreva um algoritmo que recebe um array de números inteiros, procure o maior v
 */
 
 function getMaxNumber(numbers) {
+  const ordenando = numbers.sort((a, b) => b- a);
+
+
   // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+  return ordenando[0]// Retorne o resultado aqui
 }
 
 module.exports = getMaxNumber;

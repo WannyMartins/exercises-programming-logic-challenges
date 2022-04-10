@@ -14,7 +14,17 @@ u - 1
 */
 
 function encodeMessage(string) {
+  let newString = string;
+  newString = newString.replace(/[a]/g, 5);
+  newString = newString.replace(/[e]/g, 'b');
+  newString = newString.replace(/[i]/g, 9);
+  newString = newString.replace(/[o]/g, "p");
+  newString = newString.replace(/[u]/g, 1);
+  
+  return newString;
+  
   // Desenvolva seu código nessa função
 }
+
 
 module.exports = encodeMessage;

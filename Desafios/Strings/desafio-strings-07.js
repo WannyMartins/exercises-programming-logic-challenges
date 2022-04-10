@@ -31,8 +31,52 @@ Senão, retorne:
 
 */
 
-function includeA(word) {
-  // Desenvolva seu código nessa função
-}
 
-module.exports = includeA;
+function includeA(word) {
+  let newWord = word.toLowerCase();
+  let start = newWord.startsWith('a');
+  let end = newWord.endsWith('a');
+  let contain = newWord.substr(1, newWord.length - 2).includes('a')
+
+    if (start && end && !contain){
+        return `A palavra ${word} possui a letra 'a' apenas no começo e no fim da palavra.`
+      }
+      if (start && !end && !contain) {
+        return `A palavra ${word} possui a letra 'a' apenas como primeira letra.`;
+      }
+      if (!start && end && !contain) {
+        return `A palavra ${word} possui a letra 'a' apenas como última letra.`;
+      }
+      if (!start && !end && contain) {
+        return `A palavra ${word} possui a letra 'a', porém não é a primeira nem a última letra.`;
+      }
+      return `A palavra ${word} não contém a letra 'a'.`
+    }
+  // const aInicial = word[0] === 'a' || word[0] === 'A';
+  // const aFinal = (word.split('').reverse()[0]) === /a/i;
+  // const aFeAI = aInicial && aFinal;
+  // const acentro = word.split("").includes('a'); 
+  
+  // if(aFeAI){
+    
+  //   return `A palavra ${word} possui a letra 'a' apenas no começo e no fim da palavra.`;
+  // } 
+  // if (aInicial){
+
+  //   return `A palavra ${word} possui a letra 'a' apenas como primeira letra.`;
+  // }
+  // if (aFinal){
+
+  //     return `A palavra ${word} possui a letra 'a' apenas como última letra.`;
+  //   } 
+  //   if (acentro){
+      
+  //     return `A palavra ${word} possui a letra 'a', porém não é a primeira nem a última letra.`;
+  //   }
+
+  //     return `A palavra ${word} não contém a letra 'a'.`;
+  // Desenvolva seu código nessa função
+
+
+
+  module.exports = includeA;

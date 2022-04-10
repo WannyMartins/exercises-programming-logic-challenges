@@ -13,6 +13,9 @@ Escreva o algoritmo usado por André para calcular seu próprio IMC e o retorne.
 */
 
 function IMC(base, height){
+  const expHeigth = height * height;
+  const result = expHeigth / base;
+  return result;
   // Desenvolva seu código nessa função
 }
 

@@ -7,6 +7,9 @@ Escreva um algoritmo que faça conversão de temperatura em graus Celsius para g
 */
 
 function celsiusToFahrenheit(celsius){
+
+  const fFaharenheit = celsius * 1.8;
+  return fFaharenheit + 32;
   // Desenvolva seu código nessa função
 }
 

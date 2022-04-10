@@ -16,7 +16,7 @@ Saída:
 */
 
 function converteType(string) {
+  return parseInt(string, 10);
   // Desenvolva seu código nessa função
 }
-
 module.exports = converteType;

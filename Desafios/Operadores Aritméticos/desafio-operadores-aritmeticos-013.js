@@ -10,6 +10,8 @@ Elabore uma função que retorne uma cor RGB aleatória no formato:
  */
 
 function generateColor(){
+  const cor = Math.floor(Math.random()*255);
+  return `rgb(${cor}, ${cor}, ${cor})`
   // Desenvolva seu código nessa função
 }
 

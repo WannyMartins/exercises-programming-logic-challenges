@@ -16,6 +16,11 @@ Saída:
 */
 
 function mathOperations(number1, number2) {
+  const soma = number1 + number2;
+  const sub = number1 - number2;
+  const mult = number1 * number2;
+  const div = number1 / number2;
+  return `${number1} + ${number2} = ${soma}. ${number1} - ${number2} = ${sub}. ${number1} x ${number2} = ${mult}. ${number1} / ${number2} = ${div}.`
   // Desenvolva seu código nessa função
 }
 

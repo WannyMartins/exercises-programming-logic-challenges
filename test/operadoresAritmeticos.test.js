@@ -190,7 +190,7 @@ describe("Desafios de Operadores Aritméticos.", () => {
     });
   });
 
-  describe(" 13 - Testando a Função randomRGBColor.", () => {
+  describe.only(" 13 - Testando a Função randomRGBColor.", () => {
     // rgb(x, y, z)
     it(`Deve retornar uma string no formato 'rgb(x, y, z)', sendo x, y e z números inteiros`, () => {
       const received = randomRGBColor();

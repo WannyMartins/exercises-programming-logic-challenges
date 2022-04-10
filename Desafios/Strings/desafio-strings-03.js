@@ -16,7 +16,7 @@ Saída:
 */
 
 function personalPresentation(firstName, lastName, age) {
+  return `Meu nome é ${firstName} ${lastName} e tenho ${age} anos de vida.`
   // Desenvolva seu código nessa função
 }
-
 module.exports = personalPresentation;
