@@ -18,7 +18,13 @@ calcule a pontuação final da pessoa jogadora e a retorne no formato:
 */
 
 function calculateScore(distance) {
+  const div5 = distance / 5;
+  const split = +(div5.toString().split('.'))*2
+  const sum = split + distance;
+  return 'A pontuação da pessoa jogadora foi de ' + sum;
+
   // Desenvolva seu código nessa função
 }
+
 
 module.exports = calculateScore;

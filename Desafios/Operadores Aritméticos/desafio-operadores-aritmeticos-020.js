@@ -16,7 +16,15 @@ Retorne uma mensagem no seguinte formato:
 */
 
 function avaliador(score1, score2, score3) {
-  // Desenvolva seu código nessa função
-}
+
+  const media = (score1 + score2 + score3) / 3
+  const mediaparse = parseInt(media)
+
+  if (mediaparse >= 6) {
+    return `Aprovação, média: ${mediaparse}`
+  }
+    return `Reprovação, média: ${mediaparse}`
+  }
+
 
 module.exports = avaliador;

@@ -16,7 +16,16 @@ Retorne uma mensagem no seguinte formato:
 */
 
 function weightedAverage(score1, score2, score3) {
-  // Desenvolva seu código nessa função
+const m1 = score1 * 3;
+const m2 = score2 * 3;
+const m3 = score3 * 4;
+
+const media = (m1 + m2 + m3)/(3 + 3 + 4);
+if (media >=6) {
+  return "Aprovação, média: " + media;
+}
+return "Reprovação, média: " + media;
+
 }
 
 module.exports = weightedAverage;

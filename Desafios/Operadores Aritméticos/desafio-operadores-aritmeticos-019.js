@@ -19,6 +19,10 @@ Informações:
 */
 
 function carTrip(spBh, bhSal, salNat) {
+
+  const totalHours = spBh + bhSal + salNat;
+  const days = totalHours / 24;
+  return +(days.toFixed(3));
   // Desenvolva seu código nessa função
 }
 

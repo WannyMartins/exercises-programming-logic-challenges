@@ -11,7 +11,17 @@ Escreva um algoritmo que recebe a duração total de uma viagem em minutos e ret
 */
 
 function timeTravel(minutes){
-  // Desenvolva seu código nessa função
+  const formato = (minutes / 60).toString();
+  const split = formato.split('.');
+  const transf = parseInt(split) * 60;
+
+  const min = minutes - transf;
+  const hour = transf / 60;
+
+
+  return `A viagem terá duração de ${hour} hora(s) e ${min} minuto(s)`
 }
+
+
 
 module.exports = timeTravel;
